@@ -1,0 +1,12 @@
+test,statistic,p
+ADF (H0: unit root),-32.7583,0.0
+KPSS (H0: stationary),0.0615,0.1
+ARCH-LM lag 10 (H0: no ARCH effect),44.0039,0.0
+"Ljung-Box returns, lag 5",7.6127,0.1789
+"Ljung-Box squared returns, lag 5",45.2869,0.0
+"Ljung-Box returns, lag 10",13.6959,0.1873
+"Ljung-Box squared returns, lag 10",58.6858,0.0
+"Ljung-Box returns, lag 20",25.4218,0.1858
+"Ljung-Box squared returns, lag 20",71.8353,0.0
+Kruskal-Wallis by weekday,4.5141,0.3409
+Kruskal-Wallis by month,9.6554,0.5616

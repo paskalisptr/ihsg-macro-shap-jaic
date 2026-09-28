@@ -1,8 +1,10 @@
-fred_api_key: "10a4a8695d0a403fdda0ae3b5a496d24"                 # free key: fred.stlouisfed.org > My Account > API Keys
+fred_api_key: "10a4a8695d0a403fdda0ae3b5a496d24" # free key: fred.stlouisfed.org > My Account > API Keys
+seed: 42                         # tepat di bawah fred_api_key
 
 dates:
   download_start: "2020-01-01"   # earliest data we have; the year before analysis_start feeds the lags and the 60-day window
   analysis_start: "2021-01-04"
+  train_end: "2024-12-31"        # di dalam blok dates, di bawah analysis_start: train up to this day, test after it
   end: "2026-06-30"              # yfinance leaves this day out, so the last row is 2026-06-29
 
 yahoo:                           # ticker: name used in the pipeline

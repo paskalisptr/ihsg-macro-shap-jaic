@@ -1,139 +1,91 @@
-Output sel 7a:
-AIR MATA DI UJUNG SAJADAH 2
- date_show   src  n_klaster  tiket
-2025-09-26 train          1   2066
-2025-09-28 train          1    122
-2025-10-23  hist         82  16667
-2025-10-24  hist         95  17679
-2025-10-25  hist         95  12413
-
-DEATH WHISPERER 3
- date_show   src  n_klaster  tiket
-2025-09-29 train          1    130
-2025-09-30 train          4    384
-2025-10-01  hist         97   7266
-2025-10-02  hist         77   4122
-2025-10-03  hist         76   4298
-
-JANGAN PANGGIL MAMA KAFIR
- date_show   src  n_klaster  tiket
-2025-09-16 train          1     74
-2025-09-20 train          1    152
-2025-09-21 train          2    323
-2025-09-22 train          1    301
-2025-09-26 train          1     75
-2025-09-28 train          1    179
-2025-10-16  hist         67   8268
-2025-10-17  hist         72   6787
-2025-10-18  hist         71   6247
-
-PENGIN HIJRAH
- date_show   src  n_klaster  tiket
-2025-09-12 train          1    321
-2025-09-13 train          2    886
-2025-09-20 train          1    633
-2025-09-27 train          1    915
-2025-10-30  hist         66   8353
-2025-10-31  hist         64   5606
-2025-11-01  hist         55   5627
-
-RANGGA & CINTA
- date_show   src  n_klaster  tiket
-2025-09-23 train          1    468
-2025-09-28 train          1    501
-2025-09-29 train          1   1652
-2025-09-30 train          1    721
-2025-10-02  hist        110  22976
-2025-10-03  hist        110  24427
-2025-10-04  hist        105  35278
-
-REST AREA
- date_show   src  n_klaster  tiket
-2025-09-23 train          1   1458
-2025-09-24 train          1     70
-2025-09-25 train          2    278
-2025-09-26 train          2    289
-2025-09-27 train          2    223
-2025-09-28 train          1    138
-2025-09-30 train          1    137
-2025-10-02  hist         39   7813
-2025-10-03  hist         43   7688
-2025-10-04  hist         43   8089
-
-STOLEN GIRL
- date_show   src  n_klaster  tiket
-2025-09-22 train          1     98
-2025-10-22  hist         93   6276
-2025-10-23  hist         94   5509
-2025-10-24  hist         96   5618
-
-THE STRANGERS: CHAPTER 2
- date_show   src  n_klaster  tiket
-2025-09-26 train          1     95
-2025-10-01  hist        104   8122
-2025-10-02  hist         80   4737
-2025-10-03  hist         70   4481
-
-TUKAR TAKDIR
- date_show   src  n_klaster  tiket
-2025-09-25 train          1   1684
-2025-09-27 train          1    183
-2025-09-28 train          1    134
-2025-09-30 train          1     75
-2025-10-02  hist        103  31044
-2025-10-03  hist        109  19704
-2025-10-04  hist        107  26436
-
-YAKIN NIKAH
- date_show   src  n_klaster  tiket
-2025-08-26 train          1    205
-2025-09-26 train          1    185
-2025-09-27 train          1    206
-2025-10-09  hist         72   8478
-2025-10-10  hist         69   8188
-2025-10-11  hist         70   9638
-Output sel 7b:
-d1
-Thursday     65
-Wednesday    64
-Friday       24
-Saturday      5
-Tuesday       2
-Name: count, dtype: int64
-first
-Friday       55
-Tuesday      44
-Wednesday    44
-Thursday     32
-Monday       31
-Saturday     21
-Sunday       10
-Name: count, dtype: int64
-0
-IMAX 2D                       34
-3D                            13
-REISSUE                        3
-ANIMATION                      1
-LIVE ACTION                    1
-IMAX 3D                        1
-CAPER                          1
-WITH THE LA FILM ORCHESTRA     1
-THE VERDICT                    1
-DANYANG LAUT SELATAN           1
-Name: count, dtype: int64
-judul unik: 387 | judul dasar unik: 340
-judul dasar tak ada di movies: 8 ['5 CENTIMETERS PER SECOND', 'CHECK OUT SEKARANG, PAY LATER', 'IMAGINE DRAGONS: LIVE FROM THE HOLLYWOOD BOWL', 'KEADILAN', 'SYIRIK', 'THE CONJURING', 'THE CONJURING 2', 'THE CONJURING: THE DEVIL MADE ME DO IT']
-judul dasar >1 format di test: 16 | D1 berbeda antar format: 1
-Output sel 7d:
-film pseudo-window valid: 211
-4328 pasangan pseudo
-rows
-1    1560
-2    1771
-3     997
-Name: count, dtype: int64
-aturan aktif D1-D10 >= 2: {1: 0.647, 2: 1.0, 3: 1.0}
-aturan aktif D1-D10 >= 3: {1: 0.542, 2: 0.827, 3: 1.0}
-aturan aktif D1-D10 >= 4: {1: 0.451, 2: 0.78, 3: 0.86}
-aturan aktif D1-D10 >= 5: {1: 0.381, 2: 0.732, 3: 0.804}
-target dari test: rows1=0.243, rows2=0.459, rows3=1.000
+output sel 12a:
+MASE_w per pemisahan (rep 0 harus cocok dengan Sel 11B):
+rep             0       1       2    mean
+model                                    
++film      0.4150  0.4272  0.4169  0.4197
++kal       0.3890  0.3941  0.3912  0.3914
++kal+lft   0.3963  0.4136  0.3951  0.4017
++kal+ncl   0.4044  0.4275  0.4312  0.4210
++kal+tps3  0.3926  0.3965  0.3933  0.3941
+M1c        0.4614  0.4643  0.4613  0.4624
+base       0.4115  0.4156  0.4112  0.4127
+selisih berpasangan vs +kal (positif = lebih buruk dari +kal):
+rep             0       1       2
+model                            
++film      0.0259  0.0331  0.0257
++kal       0.0000  0.0000  0.0000
++kal+lft   0.0073  0.0195  0.0039
++kal+ncl   0.0154  0.0334  0.0400
++kal+tps3  0.0036  0.0024  0.0021
+M1c        0.0724  0.0703  0.0701
+base       0.0225  0.0215  0.0200
+   MASE_w  nol_aktual  nol_pred
+k                              
+3   0.460       0.123     0.011
+4   0.457       0.157     0.017
+5   0.411       0.234     0.032
+6   0.382       0.316     0.070
+7   0.327       0.466     0.124
+8   0.345       0.541     0.173
+9   0.357       0.588     0.188
+      size   mean
+pola             
+123   6231  0.316
+13     126  0.579
+23     458  0.782
+3      164  2.674
+      date                              holiday_name periode
+2025-04-01                          Idulfitri 1446 H   train
+2025-04-18                       Wafat Yesus Kristus   train
+2025-04-20        Kebangkitan Yesus Kristus (Paskah)   train
+2025-05-01                  Hari Buruh Internasional   train
+2025-05-12                  Hari Raya Waisak 2569 BE   train
+2025-05-29                    Kenaikan Yesus Kristus   train
+2025-06-01                      Hari Lahir Pancasila   train
+2025-06-06                          Idul Adha 1446 H   train
+2025-06-27         1 Muharam Tahun Baru Islam 1447 H   train
+2025-08-17 Proklamasi Kemerdekaan Republik Indonesia   train
+2025-09-05                  Maulid Nabi Muhammad SAW   train
+2025-12-25                   Kelahiran Yesus Kristus    test
+2026-01-01                    Tahun Baru 2026 Masehi    test
+2026-01-16             Isra Mikraj Nabi Muhammad SAW    test
+2026-02-17            Tahun Baru Imlek 2577 Kongzili    test
+2026-03-19      Hari Suci Nyepi Tahun Baru Saka 1948    test
+2026-03-21                          Idulfitri 1447 H    test
+2026-03-22                          Idulfitri 1447 H    test
+porsi baris target is_hol - train: 0.056 | test: 0.041
+porsi baris target weekend - train: 0.286 | test: 0.286
+count    156.00
+mean       0.33
+std        0.37
+min        0.00
+10%        0.00
+25%        0.01
+50%        0.14
+75%        0.67
+90%        0.97
+max        1.00
+Name: hidup_D10, dtype: float64
+lf
+(2.5900000000000003, 4.132]    0.09
+(4.132, 4.757]                 0.14
+(4.757, 5.267]                 0.36
+(5.267, 7.33]                  0.72
+Name: hidup_D10, dtype: float64
+Output sel 12b:
+pasangan test: 10373 (harapan 10373) | semua aktif D3: True
+komposisi pola test: {'123': 0.911, '23': 0.066, '3': 0.018, '13': 0.004}
+lscale | train: {'25%': 4.29, '50%': 5.04, '75%': 5.85} | test: {'25%': 3.63, '50%': 4.53, '75%': 5.41}
+f_ncl | train: {'25%': 55.0, '50%': 78.0, '75%': 93.0} | test: {'25%': 68.0, '50%': 84.0, '75%': 103.0}
+lf_tix | train: {'25%': 9.99, '50%': 10.68, '75%': 11.44} | test: {'25%': 9.67, '50%': 10.55, '75%': 11.21}
+korelasi vs baseline: 0.9301
+porsi nol per k (model): {3: 0.017, 4: 0.031, 5: 0.069, 6: 0.114, 7: 0.173, 8: 0.25, 9: 0.275}
+count    72611.0
+mean       122.2
+std        405.7
+min          0.0
+25%          0.7
+50%         22.5
+75%        111.1
+max      32358.8
+Name: total_ticket, dtype: float64
