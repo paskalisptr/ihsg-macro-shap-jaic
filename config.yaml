@@ -1,0 +1,31 @@
+fred_api_key: "10a4a8695d0a403fdda0ae3b5a496d24"                 # free key: fred.stlouisfed.org > My Account > API Keys
+
+dates:
+  download_start: "2020-01-01"   # earliest data we have; the year before analysis_start feeds the lags and the 60-day window
+  analysis_start: "2021-01-04"
+  end: "2026-06-30"              # yfinance leaves this day out, so the last row is 2026-06-29
+
+yahoo:                           # ticker: name used in the pipeline
+  "^JKSE": ihsg
+  "USDIDR=X": usdidr
+  "^GSPC": sp500
+  "CL=F": oil_wti
+  "DX-Y.NYB": dxy
+  "^VIX": vix
+
+fred:                            # daily series (DFF, not the monthly FEDFUNDS)
+  DFF: fed_funds_rate
+  DGS10: ust10y
+
+# BI Rate, INDONIA and EPU are copied by hand into data_raw/ (see 01b_parsing.py)
+
+groups:                          # the domestic vs global split behind RQ1 to RQ3
+  domestic: [usdidr, indonia, bi_rate]
+  global: [sp500, oil_wti, dxy, vix, ust10y, fed_funds_rate, epu]
+
+transform:                       # each variable sits in exactly one list
+  log_return: [sp500, oil_wti, dxy, usdidr]
+  diff: [ust10y, indonia, epu]
+  window_change: [bi_rate, fed_funds_rate]   # change over the last policy_window trading days
+  level: [vix]
+  policy_window: 60
