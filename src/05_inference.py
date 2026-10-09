@@ -33,7 +33,7 @@ def dm_test(e1, e2):
     """Diebold-Mariano on squared-error loss, HAC standard error, Harvey-Leybourne-Newbold correction."""
     d = e1**2 - e2**2
     se = sm.OLS(d, np.ones(len(d))).fit(cov_type="HAC", cov_kwds={"maxlags": lags}).bse.iloc[0]
-    dm = d.mean() / se * np.sqrt((n + 1 - 2 + 1 / n) / n)  # HLN correction, h=1
+    dm = d.mean() / se * np.sqrt((n - 1) / n)  # HLN correction, h=1: (n + 1 - 2h + h(h-1)/n) / n = (n-1)/n
     return dm, 2 * (1 - stats.t.cdf(abs(dm), n - 1))
 
 
