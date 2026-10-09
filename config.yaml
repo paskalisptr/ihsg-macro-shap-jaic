@@ -1,4 +1,4 @@
-fred_api_key: "10a4a8695d0a403fdda0ae3b5a496d24" # free key: fred.stlouisfed.org > My Account > API Keys
+fred_api_key: "" # free key: fred.stlouisfed.org > My Account > API Keys
 seed: 42                         # tepat di bawah fred_api_key
 
 dates:
