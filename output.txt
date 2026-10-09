@@ -1,8 +1,23 @@
-(.venv) PS C:\Users\X1 Carbon\GITHUB Project\ihsg-macro-jaic> python src/01_acquire.py
-[*********************100%***********************]  6 of 6 completed
-downloaded: ['dxy', 'fed_funds_rate', 'ihsg', 'oil_wti', 'sp500', 'usdidr', 'ust10y', 'vix']
-(.venv) PS C:\Users\X1 Carbon\GITHUB Project\ihsg-macro-jaic> py src/01b_parsing.py
-epu      2020-01-01 to 2026-06-30  n=2373
-bi_rate  2020-01-23 to 2026-06-18  n=79
-indonia  2020-01-02 to 2026-06-30  n=1562
-all 11 variables present, MANIFEST.sha256 written
+(.venv) PS C:\Users\X1 Carbon\GITHUB Project\ihsg-macro-jaic> py src/04b_ARIMAX.py
+C:\Users\X1 Carbon\GITHUB Project\ihsg-macro-jaic\.venv\Lib\site-packages\statsmodels\tsa\statespace\mlemodel.py:737: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+intercept            2.286e-06      0.001      0.002      0.998      -0.002       0.002
+usdidr_lag1             0.0052      0.047      0.112      0.911      -0.086       0.096
+indonia_lag1           -0.0065      0.002     -2.853      0.004      -0.011      -0.002
+bi_rate_lag1           -0.0007      0.001     -0.800      0.424      -0.002       0.001
+sp500_lag1              0.1164      0.022      5.200      0.000       0.073       0.160
+oil_wti_lag1            0.0063      0.011      0.555      0.579      -0.016       0.028
+dxy_lag1               -0.2020      0.058     -3.475      0.001      -0.316      -0.088
+vix_lag1              8.48e-06   5.12e-05      0.166      0.869   -9.19e-05       0.000
+ust10y_lag1             0.0032      0.004      0.773      0.439      -0.005       0.011
+fed_funds_rate_lag1     0.0002      0.001      0.352      0.724      -0.001       0.002
+epu_lag1            -1.243e-06   3.32e-06     -0.374      0.708   -7.75e-06    5.26e-06
+ar.L1                  -0.0761      0.030     -2.550      0.011      -0.135      -0.018
+sigma2               5.795e-05   2.15e-06     26.955      0.000    5.37e-05    6.22e-05
+=======================================================================================
+
+AR(1) coefficient: -0.0761  (p=0.0108)
+test RMSE=0.015184  MAE=0.010354  dir_acc=0.5504

@@ -1,0 +1,16 @@
+scheme,model,rmse,mae,dir_acc
+domestic,lr_plain,0.015459,0.01055,0.533141
+domestic,lr_ridge,0.015474,0.010554,0.527378
+domestic,lr_lasso,0.015493,0.010558,0.51585
+domestic,rf_wide,0.015277,0.010492,0.521614
+domestic,xgb_wide,0.015493,0.010558,0.51585
+global,lr_plain,0.015193,0.010325,0.576369
+global,lr_ridge,0.015239,0.010359,0.587896
+global,lr_lasso,0.015244,0.010369,0.59366
+global,rf_wide,0.015242,0.010349,0.564841
+global,xgb_wide,0.015284,0.010388,0.587896
+full,lr_plain,0.015116,0.01026,0.567723
+full,lr_ridge,0.015245,0.010358,0.585014
+full,lr_lasso,0.015305,0.010411,0.585014
+full,rf_wide,0.015249,0.010359,0.573487
+full,xgb_wide,0.015295,0.010399,0.576369

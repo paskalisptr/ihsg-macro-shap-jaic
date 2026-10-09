@@ -1,0 +1,2 @@
+model,rmse,mae,dir_acc
+arimax,0.015184,0.010354,0.550432

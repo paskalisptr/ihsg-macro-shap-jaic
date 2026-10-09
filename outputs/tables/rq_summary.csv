@@ -1,0 +1,6 @@
+rq,question,statistic,p,verdict
+RQ1,domestic group significant (OLS Wald),1.8771,0.1316,not significant
+RQ1,global group significant (OLS Wald),10.004,0.0,significant
+RQ2,"domestic adds value beyond global (DM, worst-case model)",1.5209,0.1292,not significant
+RQ2,ARIMAX beats naive (DM),-1.736,0.0835,not significant
+RQ3,domestic share of SHAP (range across LR/RF/XGBoost),0.0654,,7% to 27%
