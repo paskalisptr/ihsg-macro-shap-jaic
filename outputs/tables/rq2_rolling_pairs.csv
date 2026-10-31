@@ -1,0 +1,7 @@
+model_a,model_b,dm_stat,p
+full_lr,global_lr,0.2671,0.7895
+full_rf,global_rf,0.6622,0.5083
+full_xgb,global_xgb,-0.053,0.9577
+global_lr,domestic_lr,-2.3444,0.0196
+global_rf,domestic_rf,-2.3555,0.0191
+global_xgb,domestic_xgb,-2.0556,0.0406

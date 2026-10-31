@@ -1,0 +1,4 @@
+shap_model,spearman,spearman_p,cosine
+rf,0.6565,0.0392,0.9157
+xgb,0.6626,0.0368,0.9377
+lr,0.9058,0.0003,0.9517

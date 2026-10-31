@@ -1,0 +1,12 @@
+Model name,mcs_p,in_set_90
+domestic_xgb,0.093,False
+naive,0.093,False
+domestic_rf,0.099,False
+domestic_lr,0.1085,True
+full_xgb,0.5595,True
+arimax,0.735,True
+full_rf,0.819,True
+global_lr,0.819,True
+global_rf,0.819,True
+global_xgb,0.819,True
+full_lr,1.0,True
