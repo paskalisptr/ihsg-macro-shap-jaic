@@ -12,16 +12,19 @@ variables to next-day IHSG (Jakarta Composite Index) log returns, 2021-2026, usi
 Models: Linear Regression, Random Forest, XGBoost. Primary metric: RMSE (MAE and R² supporting); directional accuracy is secondary.
 
 ## Status
-
 | Stage | Script | State |
 |---|---|---|
 | 1 Acquisition | `src/01_acquire.py` | done |
 | 2 Preprocessing | `src/02_preprocess.py` | done |
-| 3 OLS + Wald (RQ1) | `src/03_ols_wald.py` | planned |
-| 4 Models + ablation | `src/04_models.py` | planned |
-| 5 DM + binomial inference (RQ2) | `src/05_inference.py` | planned |
-| 6 SHAP group share (RQ3) | `src/06_shap.py` | planned |
-| 7 Report tables/figures | `src/07_report.py` | planned |
+| 3 OLS + Wald (RQ1) | `src/03_ols_wald.py` | done |
+| 4 Models + ablation | `src/04_models.py` | done |
+| 5 DM + binomial inference (RQ2) | `src/05_inference.py` | done |
+| 6 SHAP group share (RQ3) | `src/06_SHAP.py` | done |
+| 7 Report tables/figures | `src/07_report.py` | done |
+| 8 Rolling-origin robustness (RQ2) | `src/08_rolling_origin.py` | done |
+| 9 OLS vs SHAP rank agreement (RQ3) | `src/09_rank_agreement.py` | done |
+| 10 MCS, Pesaran-Timmermann, SHAP per block | `src/10_mcs_pt_blocks.py` | done |
+| 11 Line charts | `src/11_line_charts.py` | done |
 
 ## Setup and run
 
